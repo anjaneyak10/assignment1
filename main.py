@@ -42,9 +42,7 @@ def learningListsAndDict():
     info = list(zip(names,age))
     info =sorted(info,key=lambda i:i[1])
     print("sorted by ages",info)
-    dictionary = dict()
-    for i,j in info:
-        dictionary[i]=j
+    dictionary = dict(info)
     print("dictionary = ",dictionary)
     for i in dictionary.keys():
         dictionary[i]+=1
