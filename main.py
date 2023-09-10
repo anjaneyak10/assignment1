@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 def learningStrings(s):
     print("original text-", s)
     print("In uppercase-", s.upper())
+    s = "Unsupervised learning does not need a target."
+    print("Corrected sentence ",s)
 """
     learningIntegers takes two integers as an input and then increments their value by 1
     :param i: variable 1 
@@ -129,7 +131,7 @@ def csvOperations():
 
 if __name__ == '__main__':
     print("q 1.1")
-    learningStrings('Unsupervised learning does not need a target.')
+    learningStrings('Unsupervised learning needs a target.')
     print()
     learningIntegers(7, 8)
     print("------------------------------------------------------------------")
